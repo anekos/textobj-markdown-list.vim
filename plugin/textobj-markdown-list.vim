@@ -22,15 +22,12 @@ function! s:markdown_list()
   endfor
 
   if l:start is v:null
-    echoerr 'List not found'
     return
   endif
 
   if l:end is v:null
     let l:end = line('$')
   endif
-
-  echomsg [l:start, l:end]
 
   call setpos("'<", [l:buf_num, l:start, 1, 0])
   call setpos("'>", [l:buf_num, l:end, len(getline(l:end)), 0])

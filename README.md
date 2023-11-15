@@ -1,4 +1,4 @@
-# markdown_list.vim
+# vim-textobj-markdown-list
 
 A Vim plugin that defines a custom text object for easily selecting and operating on the top-level Markdown lists.
 
